@@ -1,0 +1,10 @@
+img {
+  vertical-align: middle;
+  width: -webkit-fill-available;
+}
+.carousel.slide,
+.carousel-inner,
+.carousel-item,
+.picsum-img-wrapper {
+  max-height: 500px !important;
+}

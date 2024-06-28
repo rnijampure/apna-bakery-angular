@@ -1,0 +1,37 @@
+/* .carousel-inner .carousel-item {
+  max-width: 20px !important;
+}
+
+.carousel-inner .carousel-item .container {
+  max-width: 30px !important;
+}
+
+.carousel-item.active.carousel-item-start {
+  max-width: 20%;
+}
+ */
+div.topic {
+  padding: 20px;
+  p {
+    position: absolute;
+    margin: auto;
+    float: none;
+    left: 40%;
+    top: 27px;
+    font-family: "Roboto", "Arial Narrow", Arial, sans-serif;
+    font-style: italic;
+    padding: 5px 20px;
+    font-size: 20px;
+    z-index: 999;
+    background: white !important;
+  }
+
+  hr {
+    z-index: -1;
+
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 0;
+    background-color: white;
+  }
+}

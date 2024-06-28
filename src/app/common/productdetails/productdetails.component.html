@@ -1,0 +1,59 @@
+<div class="container">
+  @if (product) {
+  <div class="card mb-3 mt-5" style="max-width: 80%; border: 0px">
+    <div class="row g-0">
+      <h1>
+        {{ product.item.name }}
+      </h1>
+      <div class="col-md-4">
+        <img
+          class="center-block img-responsive img-fluid rounded-start"
+          [style.width.px]="250"
+          [style.margin.px]="2"
+          [src]="product.item.src"
+          [title]="product.item.name"
+        />
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">
+            This is a wider card with supporting text below as a natural lead-in
+            to additional content. This content is a little bit longer.
+          </p>
+          <p class="card-text">
+            <small class="text-muted">Last purchased 3 mins ago</small>
+          </p>
+          <mat-form-field>
+            <mat-label>Select quantity</mat-label>
+            <mat-select [(value)]="selected">
+              <mat-option value="1">1</mat-option>
+              <mat-option value="2">2</mat-option>
+              <mat-option value="3">3</mat-option>
+            </mat-select>
+          </mat-form-field>
+          <div>
+            <button
+              class="btn btn-primary"
+              style="width: auto"
+              (click)="addToCart()"
+            >
+              <i class="fa fa-chevron-left"></i> ADD TO CART
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-footer">
+    <button
+      class="btn btn-outline-secondary"
+      style="width: 80px"
+      (click)="sendback()"
+    >
+      <i class="fa fa-chevron-left"></i> Back
+    </button>
+  </div>
+  }
+</div>

@@ -1,0 +1,115 @@
+<h1 class="m-4 mt-0">Your Cart</h1>
+@if (this.cartItems.length == 0) {
+<div class="w-100 text-center ml-2" style="margin-left: 22%; overflow: hidden">
+  <img
+    src="../../../../assets/images/emptyCart.png"
+    title="  Your cart is empty"
+    style="width: 150px"
+  />
+  <h2 class="m-4 mt-0">Your cart is empty!</h2>
+  <p>Please select a few items.</p>
+</div>
+
+} @else { @for (product of cartItems; track product;let i= $index;) {
+<div class="card m-4">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+              class="center-block px-2 img-responsive"
+              [style.width.px]="100"
+              [style.height.px]="100"
+              [style.margin.px]="2"
+              [src]="product.item.src"
+              [title]="product.name"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-12">
+                <h3 style="font-weight: 500">
+                  {{ product.item.name }}
+                </h3>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-11">
+                {{ product.item.description.substring(0, 30) }}
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-11">
+                Price:
+                {{ product.item.price }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-11">
+                Quantity:
+                <select
+                  class="form-select form-select-xs"
+                  name="quantity"
+                  aria-label=".form-select-sm example"
+                  (change)="updateQuantity($event, product)"
+                >
+                  <option [selected]="product.quantity == 1" value="1">
+                    1
+                  </option>
+                  <option [selected]="product.quantity == 2" value="2">
+                    2
+                  </option>
+                  <option [selected]="product.quantity == 3" value="3">
+                    3
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 justify-content-end d-flex">
+      <button
+        class="btn btn-outline-secondary-outline mt-2 justify-end"
+        style="width: 120px"
+        (click)="removeFromCart(product)"
+      >
+        <i class="fa-solid fa-trash"></i> Remove
+      </button>
+    </div>
+    <div class="row">
+      <div
+        class="col-md-11 text-right"
+        style="text-align: right !important; font-weight: bold"
+      >
+        Total Price
+        {{ this.product.item.price * this.product.quantity }}
+      </div>
+    </div>
+  </div>
+</div>
+}
+<hr />
+<div class="row">
+  <div class="col-md-11 text-right">
+    <h1 class="text-right float-right" style="float: right !important">
+      Grand Total
+
+      {{ this.grandTotal }}
+    </h1>
+  </div>
+</div>
+<div class="cart-footer card-footer m-4 mt-3">
+  <button
+    class="btn btn-outline-secondary"
+    style="width: 80px"
+    (click)="backClicked()"
+  >
+    <i class="fa fa-chevron-left"></i> Back
+  </button>
+</div>
+}
