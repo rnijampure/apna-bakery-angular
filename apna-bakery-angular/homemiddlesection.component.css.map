@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["src/app/prelogin/home/homemiddlesection/homemiddlesection.component.scss"],
+  "sourcesContent": ["/* .carousel-inner .carousel-item {\r\n  max-width: 20px !important;\r\n}\r\n\r\n.carousel-inner .carousel-item .container {\r\n  max-width: 30px !important;\r\n}\r\n\r\n.carousel-item.active.carousel-item-start {\r\n  max-width: 20%;\r\n}\r\n */\r\ndiv.topic {\r\n  padding: 20px;\r\n  p {\r\n    position: absolute;\r\n    margin: auto;\r\n    float: none;\r\n    left: 40%;\r\n    top: 27px;\r\n    font-family: \"Roboto\", \"Arial Narrow\", Arial, sans-serif;\r\n    font-style: italic;\r\n    padding: 5px 20px;\r\n    font-size: 20px;\r\n    z-index: 999;\r\n    background: white !important;\r\n  }\r\n\r\n  hr {\r\n    z-index: -1;\r\n\r\n    width: 80%;\r\n    margin: 20px auto;\r\n    padding: 10px 0;\r\n    background-color: white;\r\n  }\r\n}\r\n"],
+  "mappings": ";AAYA,GAAA,CAAA;AACE,WAAA;;AACA,GAAA,CAFF,MAEE;AACE,YAAA;AACA,UAAA;AACA,SAAA;AACA,QAAA;AACA,OAAA;AACA;IAAA,QAAA;IAAA,cAAA;IAAA,KAAA;IAAA;AACA,cAAA;AACA,WAAA,IAAA;AACA,aAAA;AACA,WAAA;AACA,cAAA;;AAGF,GAAA,CAhBF,MAgBE;AACE,WAAA;AAEA,SAAA;AACA,UAAA,KAAA;AACA,WAAA,KAAA;AACA,oBAAA;;",
+  "names": []
+}
