@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/prelogin/carousel/carousel.component.scss"],
-  "sourcesContent": ["img {\r\n  vertical-align: middle;\r\n  width: -webkit-fill-available;\r\n}\r\n.carousel.slide,\r\n.carousel-inner,\r\n.carousel-item,\r\n.picsum-img-wrapper {\r\n  max-height: 500px !important;\r\n}\r\n"],
-  "mappings": ";AAAA;AACE,kBAAA;AACA,SAAA;;AAEF,CAAA,QAAA,CAAA;AAAA,CAAA;AAAA,CAAA;AAAA,CAAA;AAIE,cAAA;;",
-  "names": []
-}
