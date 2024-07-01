@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/common/header/header.component.scss"],
-  "sourcesContent": ["app-header,\r\nheader {\r\n  display: flex;\r\n  width: 100%;\r\n}\r\n.text-bg-dark {\r\n  background-color: #75372a;\r\n}\r\ni {\r\n  font-size: 20px;\r\n}\r\n\r\nimg.logo {\r\n  max-width: 150px;\r\n  max-height: auto;\r\n}\r\n"],
-  "mappings": ";AAAA;AAAA;AAEE,WAAA;AACA,SAAA;;AAEF,CAAA;AACE,oBAAA;;AAEF;AACE,aAAA;;AAGF,GAAA,CAAA;AACE,aAAA;AACA,cAAA;;",
-  "names": []
-}

@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["src/app/common/searchpage/searchpage.component.scss"],
-  "sourcesContent": ["#search-page {\r\n  flex-grow: 1;\r\n}\r\n\r\n.small_col_size_search {\r\n  max-height: 560px;\r\n  min-height: 560px;\r\n}\r\n\r\n.mdc-card__media {\r\n  height: 250px;\r\n}\r\n"],
-  "mappings": ";AAAA,CAAA;AACE,aAAA;;AAGF,CAAA;AACE,cAAA;AACA,cAAA;;AAGF,CAAA;AACE,UAAA;;",
-  "names": []
-}
